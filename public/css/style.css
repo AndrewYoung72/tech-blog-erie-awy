@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: cornflowerblue;
+  border-bottom: 2px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: black;
+  padding: 8px 25px;
+  transition: all .5s ease;
+}
+
+.navbar a:hover {
+  background-color: white;
+  box-shadow: 0 0 10px white
+}
+
+
+.container .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  height: 400px;
+  width: auto;
+  box-sizing: border-box;
+}
+
