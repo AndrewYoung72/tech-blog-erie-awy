@@ -1,3 +1,14 @@
 <h1 class="home">Login or sign up to create your blog!</h1>
-
+{{#each blogs as |blog| }}
+<div class="blog-post">
+  <div class="blog-column">
+    <a href="/blog/{{blog.user_id}}">{{format_date blog.date_created}}</a>
+  </div>
+  <div class="blog-description">
+    <p>
+      {{blog.descrition}}
+    </p>
+  </div>
+</div>
+{{/each}}
 
