@@ -2,18 +2,18 @@ const loginFunction = async (event) => {
   event.preventDefault();
 
   //Get login values from login.handlebars
-  const email = document.getElementById("email-login");
-  const password = document.getElementById("password-login");
+  const email = document.getElementById("email-login").value;
+  const password = document.getElementById("password-login").value;
 
   if (email && password) {
-    const response = await fetch("/api/user/login", {
+    const response = await fetch("/api/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
-    //If  valid user then redirect to blog page
+    //If  valid user then redirect to user page
     if (response.ok) {
-      document.location.replace("/homePage");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }
@@ -27,21 +27,21 @@ const signupFunction = async (event) => {
   const password = document.getElementById("password-signUp").value.trim();
 
   if (email && password) {
-    const response = await fetch('/api/user', {
+    const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      document.location.replace('/homePage');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
   }
 };
 
-
-document.querySelector(".login-form").addEventListener("submit", loginFunction);
-
-document.querySelector(".signUp-form").addEventListener("submit", signupFunction);
+if (document.querySelector(".login-form"))
+{document.querySelector(".login-form").addEventListener("submit", loginFunction);}
+if (document.querySelector(".signUp-form"))
+{document.querySelector(".signUp-form").addEventListener("submit", signupFunction);}
