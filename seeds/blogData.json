@@ -1,8 +1,10 @@
 [
   {
+    "title": "My first test",
     "description": "This is a seed test."
   },
   {
+    "title": "Second test",
     "description": "Project 2 has started. Now we are utilizing what we have learned in our backend work."
   }
 ]

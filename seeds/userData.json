@@ -1,9 +1,11 @@
 [
   {
+    "user_name": "Andy Young",
     "email": "mmawy@aol.com",
     "password": "password72"
   },
   {
+    "user_name": "Reed Young",
     "email": "awyoung@live.com",
     "password": "password72"
   }
