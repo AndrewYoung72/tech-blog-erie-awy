@@ -2,8 +2,9 @@
 {{#each blogs as |blog| }}
 <div class="blog-post">
   <div class="blog-column">
-    <a href="/blog/{{blog.user_id}}">{{format_date blog.date_created}}</a>
+    <a href="/blog/{{blog.user_id}}">{{blog.title}}</a>
   </div>
+  <div>{{format_date blog.date_created}}</div>
   <div class="blog-description">
     <p>
       {{blog.description}}

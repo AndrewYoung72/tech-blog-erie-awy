@@ -61,6 +61,18 @@ header {
   box-sizing: border-box;
 }
 
+.container .signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  height: 400px;
+  margin: auto;
+  width: 600px;
+  box-sizing: border-box;
+}
+
 
 #text-area {
   display: flex;
@@ -68,4 +80,9 @@ header {
   align-items: center;
   margin: auto;
   
+}
+
+.logout-button:hover{
+  background-color: red;
+  box-shadow: 0 0 10px red;
 }
