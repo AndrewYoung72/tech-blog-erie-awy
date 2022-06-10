@@ -12,11 +12,15 @@ router.get("/", async (req, res) => {
   })
   console.log(allBlogs)
   res.render("homePage", {
+
    blogs: allBlogs 
   });
 });
 router.get("/login", (req, res) => {
-  res.render("login");
+  res.render("login", {
+    user_name: req.session.user_name,
+    user_name: req.session.user_name,
+  });
 });
 router.get("/signup", (req, res) => {
   res.render("signup");

@@ -1,9 +1,11 @@
 [
   {
+    "user_name": "Andy Young",
     "title": "My first test",
     "description": "This is a seed test. Javascript is going to be a never ending journey. But it still isn't as frustrating as CSS."
   },
   {
+    "user_name": "Andy Young",
     "title": "Second test",
     "description": "Project 2 has started. Now we are utilizing what we have learned in our backend work. I am looking forward to this project but I am also apprehensive about the deployment to Heroku."
   }

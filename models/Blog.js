@@ -11,6 +11,10 @@ Blog.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    user_name: {
+      type: DataTypes.STRING,
+      defaultValue: undefined,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
