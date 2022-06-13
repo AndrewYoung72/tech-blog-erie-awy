@@ -12,14 +12,11 @@ router.get("/", async (req, res) => {
   })
   console.log(allBlogs)
   res.render("homePage", {
-
    blogs: allBlogs 
   });
 });
 router.get("/login", (req, res) => {
   res.render("login", {
-    user_name: req.session.user_name,
-    user_name: req.session.user_name,
   });
 });
 router.get("/signup", (req, res) => {
@@ -28,7 +25,7 @@ router.get("/signup", (req, res) => {
 router.get("/dashboard", (req, res) => {
   res.render("dashboard", {
     logged_in: req.session.logged_in,
-    user_name: req.session.user_name,
+    name: req.session.name,
   });
 });
 

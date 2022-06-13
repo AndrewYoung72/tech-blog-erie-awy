@@ -1,9 +1,8 @@
 const loginFunction = async (event) => {
   event.preventDefault();
-
   //Get login values from login.handlebars
-  const email = document.getElementById("email-login").value;
-  const password = document.getElementById("password-login").value;
+  const email = document.getElementById("email-login").value.trim();
+  const password = document.getElementById("password-login").value.trim();
 
   if (email && password) {
     const response = await fetch("/api/users/login", {

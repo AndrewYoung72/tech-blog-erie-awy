@@ -1,27 +1,26 @@
 <h1>Sign up now to join!</h1>
 
-<div class="container">
-  <div class="signUp">
-    <h3>Create a username and password.</h3>
-
-    <form class="signUp-form">
-      <div class="form">
-        <label for="name-signUp">User Name:</label>
-        <input type="text" id="name-signUp" />
-      </div>
-      <div class="form">
-        <label for="email-signUp">email:</label>
-        <input type="text" id="email-signUp" />
-      </div>
-      <div class="form">
-        <label for="password-signUp">password:</label>
-        <input type="text" id="password-signUp" />
-      </div>
-      <div class="form">
-        <button id="signUp-button" type="submit">SIGN UP</button>
-      </div>
-    </form>
+<form class="signUp-form">
+ <div class="row mb-3">
+    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="name-signUp">
+    </div>
   </div>
-</div>
+ <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="email-signUp">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="password-signUp">
+    </div>
+  </div>
+  <button id="signUp-button" type="submit" class="btn btn-primary">Sign up</button>
+</form>
+
 
 <script src="./js/login.js"></script>

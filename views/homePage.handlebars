@@ -1,11 +1,11 @@
 <h1 class="card-header">Login or sign up to create your blog!</h1>
 {{#each blogs as |blog| }}
   <div class="card">
-  <h5 class="card-header">{{format_date blog.date_created}} {{user_name}}- User id: {{blog.user_id}}</h5>
+  <h5 class="card-header">{{format_date blog.date_created}} {{name}}- User id: {{blog.user_id}}</h5>
   <div class="card-body">
     <h5 class="card-title">{{blog.title}}</h5>
     <p class="card-text">{{blog.description}}</p>
-    <a href="/blog/" class="btn btn-primary">Go somewhere</a>
+    <a href="/blog/" class="btn btn-primary">Leave a comment</a>
   </div>
     <p class="card-text">{{comment.description}}</p>
 </div>
