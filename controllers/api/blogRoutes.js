@@ -8,8 +8,10 @@ router.post('/', withAuth, async (req, res) => {
     const newBlog = await Blog.create({
       ...req.body,
       date_created: Date.now(),
-      user_id: req.session.user_id,
       name: req.session.name,
+      title: req.session.title,
+      description: req.session.description,
+      user_id: req.session.user_id
     });
 
     res.status(200).json(newBlog);

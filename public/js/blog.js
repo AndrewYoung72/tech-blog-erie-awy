@@ -2,8 +2,8 @@
 const blogHandler = async (event) => {
   event.preventDefault();
 
-  const title = document.getElementById("blog").value.trim();
-  const description = document.getElementById("address").value.trim();
+  const title = document.getElementById("blog-title").value.trim();
+  const description = document.getElementById("blog-description").value.trim();
  
 
 
@@ -25,5 +25,5 @@ const blogHandler = async (event) => {
 };
 
 document
-  .querySelector("#blog-input")
+  .querySelector("#blog-form")
   .addEventListener("submit", blogHandler);

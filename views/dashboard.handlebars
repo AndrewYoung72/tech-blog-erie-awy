@@ -1,17 +1,17 @@
 <h2 class="home">Welcome, {{name}}!</h2>
 <h4>Create a blog!</h4>
 
-<form class="login-form">
+<form id="blog-form">
   <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+    <label for="titleInput" class="col-sm-2 col-form-label">Title</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" id="email-login" />
+      <input type="text" class="form-control" id="blog-title" />
     </div>
   </div>
   <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Blog</label>
+    <label for="blogInput" class="col-sm-2 col-form-label">Blog</label>
     <div class="col-sm-3">
-      <textarea class="form-control" aria-label="With textarea"></textarea>
+      <textarea class="form-control" id="blog-description"  aria-label="With textarea"></textarea>
     </div>
   </div>
   <button id="login-button" type="submit" class="btn btn-primary">Post</button>
