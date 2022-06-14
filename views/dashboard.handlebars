@@ -1,17 +1,20 @@
 <h2 class="home">Welcome, {{name}}!</h2>
 <h4>Create a blog!</h4>
-<form id="blog-input">
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="BlogTitle" aria-label="BlogTitle">
-</div>
-<div class="input-group">
-  <span class="input-group-text">Create your blog</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-<button id="blog-btn" class="btn btn-outline-secondary" type="button">Submit your blog</button>
+
+<form class="login-form">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="email-login" />
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Blog</label>
+    <div class="col-sm-3">
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+  </div>
+  <button id="login-button" type="submit" class="btn btn-primary">Post</button>
 </form>
-
-
-
 
 <script src="./js/blog.js"></script>

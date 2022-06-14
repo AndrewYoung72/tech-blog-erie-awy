@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
   })
   console.log(allBlogs)
   res.render("homePage", {
-   blogs: allBlogs 
+   blogs: allBlogs, 
   });
 });
 router.get("/login", (req, res) => {
@@ -21,6 +21,13 @@ router.get("/login", (req, res) => {
 });
 router.get("/signup", (req, res) => {
   res.render("signup");
+});
+router.get("/comments", async (req, res) => {
+  const result = await Blog.findByPk({})
+  
+  res.render("comments", {
+    blogs: allBlogs,
+  });
 });
 router.get("/dashboard", (req, res) => {
   res.render("dashboard", {

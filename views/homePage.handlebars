@@ -1,26 +1,26 @@
 <h1 class="card-header">Login or sign up to create your blog!</h1>
-{{#each blogs as |blog| }}
-  <div class="card">
-  <h5 class="card-header">{{format_date blog.date_created}} {{name}}- User id: {{blog.user_id}}</h5>
-  <div class="card-body">
-    <h5 class="card-title">{{blog.title}}</h5>
-    <p class="card-text">{{blog.description}}</p>
-    <a href="/blog/" class="btn btn-primary">Leave a comment</a>
+{{#each blogs as |blog|}}
+  <div class="card w-50 p-3">
+    <h5 class="card-header">{{format_date blog.date_created}}
+      {{name}}-
+      {{blog.title}}</h5>
+    <div class="card-body">
+      <p class="card-text">{{blog.description}}</p>
+    </div>
+    <div class="input-group mb-3">
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        id="button-addon1"
+      >Add your comment</button>
+      <input
+        type="text"
+        class="form-control"
+        placeholder=""
+        aria-label="Example text with button addon"
+        aria-describedby="button-addon1"
+      />
+    </div>
+    <div id="allComments">{{comment.description}}</div>
   </div>
-    <p class="card-text">{{comment.description}}</p>
-</div>
 {{/each}}
-
-
-
-{{!-- <div class="blog-post">
-  <div class="blog-column">
-    <a href="/blog/{{blog.user_id}}">{{blog.title}}</a>
-  </div>
-  <div>{{format_date blog.date_created}}</div>
-  <div class="blog-description">
-    <p>
-      {{blog.description}}
-    </p>
-  </div>
-</div> --}}

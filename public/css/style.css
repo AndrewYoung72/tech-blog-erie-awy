@@ -34,7 +34,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
   margin: auto;
   width: 600px;
   padding: 5px;
@@ -49,7 +48,7 @@ header {
 }
 
 
-.container .login-container {
+/* .container .login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +79,7 @@ header {
   align-items: center;
   margin: auto;
   
-}
+} */
 
 .logout-button:hover{
   background-color: red;
