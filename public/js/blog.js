@@ -7,7 +7,7 @@ const blogHandler = async (event) => {
  
 
 
-  if (description) {
+  if (title && description) {
     const response = await fetch("api/blogs", {
       method: "POST",
       body: JSON.stringify({ title, description }),
@@ -24,6 +24,5 @@ const blogHandler = async (event) => {
   }
 };
 
-document
-  .querySelector("#blog-form")
-  .addEventListener("submit", blogHandler);
+if (document.querySelector(".blog-form"))
+{document.querySelector(".blog-form").addEventListener("submit", blogHandler);}
