@@ -12,7 +12,7 @@ const loginFunction = async (event) => {
     });
     //If  valid user then redirect to user page
     if (response.ok) {
-      document.location.replace("/dashboard");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }

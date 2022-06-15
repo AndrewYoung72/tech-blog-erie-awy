@@ -9,8 +9,6 @@ router.post('/', withAuth, async (req, res) => {
       ...req.body,
       date_created: Date.now(),
       name: req.session.name,
-      title: req.session.title,
-      description: req.session.description,
       user_id: req.session.user_id
     });
 

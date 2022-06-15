@@ -14,13 +14,14 @@
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
           {{!-- <a href="/dashboard">USER DASHBOARD</a> --}}
-          <a href="/">HOMEPAGE</a> |
+          <a href="/">HOMEPAGE</a> 
+          <a href="/dashboard"> USER DASHBOARD</a>
           <button class="logout-button" id="logout">LOGOUT</button>
         {{else}}
           <a href="/login">LOGIN</a>
           <a href="/signup">SIGN UP</a>
           <a href="/">HOMEPAGE</a>
-          <a href="/dashboard"> USER DASHBOARD</a>
+          
         {{/if}}
       </nav>
     </header>
