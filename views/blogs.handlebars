@@ -1,25 +1,20 @@
-<h1>Comment page</h1>
-
-  <div class="card w-50 p-3">
-    <h5 class="card-header">{{format_date blog.date_created}}
-      {{name}}-
-      {{blog.title}}</h5>
-    <div class="card-body">
-      <p class="card-text">{{blog.description}}</p>
-    </div>
+<div class="card w-50 p-3">
+  <form class="comment-form">
     <div class="input-group mb-3">
-      <button
-        class="btn btn-outline-secondary"
-        type="button"
-        id="button-addon1"
-      >Add your comment</button>
       <input
         type="text"
-        class="comment-form"
+        class="comment-input"
         placeholder=""
         aria-label="Example text with button addon"
         aria-describedby="button-addon1"
       />
-      <button></button>
+       <button
+        class="btn btn-outline-secondary"
+        type="submit"
+        id="button-addon1"
+      >Add your comment</button>
     </div>
-  </div>
+  </form>
+</div>
+
+<script src="./js/comment.js"></script>
