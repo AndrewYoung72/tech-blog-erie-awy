@@ -1,5 +1,5 @@
 # tech-blog-erie-awy
-
+![Screen Shot 2022-06-16 at 2 46 37 PM (2)](https://user-images.githubusercontent.com/97897877/174161184-b6717ff1-d5fb-4bec-90f9-fb5c05e3d83b.png)
 ## Purpose
 The purpose of this challenge was to build a functioning blog site where a user can signup and create blogs to be posted to a homepage. A logged in user should be able to create, update and delete there own blogs. A logged in user should also be able to add comments to existing blogs.
 ## Description
